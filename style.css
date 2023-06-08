@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #3d89fb;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow:
+        2px 3.3px 5.3px -59px rgba(0, 0, 0, 0.065),
+        6.7px 11.2px 17.6px -59px rgba(0, 0, 0, 0.095),
+        30px 50px 79px -59px rgba(0, 0, 0, 0.16);
+}
+.mx-auto {
+    margin: 0 auto ;
+}
+
+.btn-primary {
+    background-color: #fbaf3d;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 0.225rem;
+    margin: 3px;
+    outline: none;
+}
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: #ffbf5e;
+}
+.btn-delete {
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 0.225rem;
+    margin: 3px;
+}
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: #ff7d7d;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid rgba(141, 141, 141, 0.61);
+    padding: 7px;
+    outline: none;
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+
+#taskConatiner li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+#taskConatiner .taskTitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#taskConatiner .taskinfo {
+    color: grey;
+    font-size: 14px;
+}
+
+.checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.checkbox-input {
+    margin: 0;
+}
+
+.checkbox-input:checked + .checkbox-label:before {
+    content: "✓";
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+.taskStatus {
+    font-size: 14px;
+    color: #888;
+}
+
+.done-task {
+    text-decoration: line-through;
+}
+
+.marked-for-deletion {
+    background-color: #fceaea;
+} 

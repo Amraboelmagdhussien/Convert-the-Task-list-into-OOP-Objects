@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <h1>To Do Task</h1>
+    </div>
+    <div class="container column mx-auto">
+        <form id="add-task" class="card column">
+            <h3>Add Task</h3>
+            <div class="formGroup">
+                <div class="formField">
+                    <label for="title">Title</label>
+                    <input type="text" class="input" id="title" name="title">
+                </div>
+                <div class="formField">
+                    <label for="priority">Priority</label>
+                    <input type="Number" class="input" id="priority" min="1" max="10" name="priority">
+                </div>
+            </div>
+            <div style="align-self: flex-end;">
+                <input type="submit" class="btn-primary add" value="Add Task">
+            </div>
+        </form>
+
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>My Tasks</h3>
+                <select id="sort" class="btn-primary">
+                    <option value="date">Sort By Date</option>
+                    <option value="priority">Sort By Priority</option>
+                    <option value="title">Sort By Title</option>
+                </select>
+            </div>
+            <ul id="taskContainer">
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./main.js" defer></script>
+</body>
+</html>
